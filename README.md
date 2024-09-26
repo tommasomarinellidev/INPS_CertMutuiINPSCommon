@@ -1,0 +1,2 @@
+# INPS_CertMutuiINPSCommon
+WSCertificazioneMutuiINPS_Common.jar
