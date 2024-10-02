@@ -230,7 +230,6 @@ public class MutuiAssociatiCodFisBeanTest {
         bean.setDataScadenza(now);
         assertEquals(now, bean.getDataScadenza());
 
-        // Additional tests can be added as needed
     }
     
     @Test

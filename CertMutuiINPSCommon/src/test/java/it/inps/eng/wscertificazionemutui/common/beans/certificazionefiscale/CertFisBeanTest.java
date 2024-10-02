@@ -17,7 +17,6 @@ public class CertFisBeanTest {
 
         // Creare un oggetto AnagraficaIntestatario fittizio
         AnagraficaIntestatario anagrafica = new AnagraficaIntestatario("123");
-        // Impostare valori fittizi per i campi di AnagraficaIntestatario se necessario
 
         // Test setter e getter per benefPrincipale
         certFisBean.setBenefPrincipale(anagrafica);

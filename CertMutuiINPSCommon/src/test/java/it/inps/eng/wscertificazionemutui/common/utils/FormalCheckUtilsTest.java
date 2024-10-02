@@ -78,3 +78,4 @@ public class FormalCheckUtilsTest {
         assertEquals("123", utils.nNull(123), "An integer input should be converted to its string representation.");
     }
 }
+
