@@ -26,8 +26,6 @@
 		<jboss-remote-naming.version>2.0.4.Final</jboss-remote-naming.version>
 		<jboss-remoting.version>4.0.9.Final</jboss-remoting.version>
 		<cxf.version>2.7.16</cxf.version>
-		
-
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -40,6 +38,7 @@
 	  <groupId>it.inps.certmutuiinpscommon-src</groupId>
 	  <artifactId>certmutuiinpscommon</artifactId>
 	  <packaging>jar</packaging>
+	  <name>certmutuiinpscommon-src</name>
 
 		<dependencies>
 		<dependency>
