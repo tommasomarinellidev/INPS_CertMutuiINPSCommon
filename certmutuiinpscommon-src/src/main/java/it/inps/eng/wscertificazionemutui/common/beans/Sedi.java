@@ -32,6 +32,7 @@ public class Sedi implements Serializable {
 	private String codicePaese="";	
 	private String cinEuro="";
 	private String iban="";
+	private String regione="";
 	
 	public Sedi()  {
 		dt_ult_agg = new Date(System.currentTimeMillis());	
@@ -420,6 +421,22 @@ public class Sedi implements Serializable {
 	 */
 	public void setNomeDirettore(String nomeDirettore) {
 		this.nomeDirettore = nomeDirettore;
+	}
+
+	/**
+	 * Returns the regione.
+	 * @return String
+	 */
+	public String getRegione() {
+		return regione;
+	}
+
+	/**
+	 * Sets the regione.
+	 * @param regione The regione to set
+	 */
+	public void setRegione(String regione) {
+		this.regione = regione;
 	}
 
 }

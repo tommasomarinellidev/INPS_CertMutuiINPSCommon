@@ -33,7 +33,7 @@
 	<parent>
 		<groupId>it.inps.certmutuiinpscommon</groupId>
 		<artifactId>certmutuiinpscommon</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.1</version>
 	  </parent>
 	  <groupId>it.inps.certmutuiinpscommon-src</groupId>
 	  <artifactId>certmutuiinpscommon</artifactId>

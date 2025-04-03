@@ -24,6 +24,7 @@ public abstract class PdfObj {
 	private Sedi sedeFiliali;
 	private boolean dirGenerale;
 	private String livelloDirettore;
+	private String mutuoPadre;
 	
 	public String getLivelloDirettore() {
 		return livelloDirettore;
@@ -132,6 +133,12 @@ public abstract class PdfObj {
 	}
 	public void setRateResidue(Integer rateResidue) {
 		this.rateResidue = rateResidue;
+	}
+	public String getMutuoPadre() {
+		return mutuoPadre;
+	}
+	public void setMutuoPadre(String mutuoPadre) {
+		this.mutuoPadre = mutuoPadre;
 	}
 
 }
