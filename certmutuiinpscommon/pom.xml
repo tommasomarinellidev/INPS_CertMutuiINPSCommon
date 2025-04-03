@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+    <groupId>it.inps.certmutuiinpscommon</groupId>
+	<artifactId>certmutuiinpscommon</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>wscertificazionemutui-common</name>
+	<description>Libreria contenente classi di utilità e file di costanti comuni a vari progetti Mutui</description>
+
+	<modules>		
+		<module>certmutuiinpscommon-src</module>
+	</modules>
+	<build>
+		<plugins> 
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.2.0</version>
+				<executions>
+					<execution>
+						<id>copy-pom-xml</id>
+						<phase>install</phase> <!-- Puoi cambiare la fase in base alle tue esigenze -->
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>../${project.artifactId}</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${project.basedir}/../</directory>
+									<includes>
+										<include>pom.xml</include>
+									</includes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
